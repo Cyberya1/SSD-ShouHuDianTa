@@ -40,7 +40,7 @@ export class Tower extends Component {
 
     protected onLoad(): void {
         Tower.ins = this;
-
+        this.data = TowerInfo.Level1;
         this.currentHP = this.data.HP;
         this.uio = this.hp.getComponent(UIOpacity);
         this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
@@ -62,10 +62,6 @@ export class Tower extends Component {
             this.attack();
             // }, TowerInfo.AttackInterval)
         }, 0.5)
-    }
-
-    init() {
-        this.data = TowerInfo.Level1;
     }
 
     attack() {

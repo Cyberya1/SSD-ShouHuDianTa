@@ -43,8 +43,6 @@ export class Zombie extends Component {
 
     protected start(): void {
         this.capsuleCollider.on('onTriggerEnter', this.onTriggerEnter, this);
-
-        // this.capsuleCollider.on('onCollisionEnter', this.onCollisionEnter, this);
     }
 
     protected update(dt: number): void {
@@ -59,59 +57,13 @@ export class Zombie extends Component {
         this.reset();
     }
 
-    // onCollisionEnter(event: ICollisionEvent) {
-    //     // 移除这行限制，允许重复攻击
-    //     // if (this.state == ZombieState.Attack) return;
-
-    //     if (event.otherCollider.getGroup() === ColliderGroup.Building ||
-    //         event.otherCollider.getGroup() === ColliderGroup.Hunter) {
-    //         this.state = ZombieState.Attack;
-    //         this._attackTarget = event.otherCollider.node;
-    //         this.capsuleCollider.enabled = false;
-
-    //         // 面向攻击目标
-    //         if (this._attackTarget && isValid(this._attackTarget)) {
-    //             const targetPos = this._attackTarget.worldPosition;
-    //             const currentPos = this.node.worldPosition;
-    //             const direction = new Vec3();
-    //             Vec3.subtract(direction, targetPos, currentPos);
-
-    //             if (direction.length() > 0.1) {
-    //                 direction.y = 0;
-    //                 const angle = Math.atan2(direction.x, direction.z) * 180 / Math.PI;
-    //                 this.node.eulerAngles = new Vec3(0, angle, 0);
-    //             }
-    //         }
-
-    //         let attackAniName: ZombieState = ZombieState.Attack;
-    //         if (this.type == ZombieType.Big) {
-    //             const randomNum = Math.floor(Math.random() * 2) + 1;
-    //             if (randomNum === 2) attackAniName = ZombieState._Attack;
-    //         }
-
-    //         this.playAni(attackAniName);
-
-    //         // 恢复动画结束监听，攻击完成后恢复移动状态
-    //         this.ske.once(SkeletalAnimation.EventType.FINISHED, (() => {
-    //             this.state = ZombieState.Run;
-    //             this.capsuleCollider.enabled = true;
-    //             this._attackTarget = null;
-    //             this.playAni(ZombieState.Idle);
-    //         }));
-    //     }
-    // }
-
     private onTriggerEnter(event: ICollisionEvent) {
-        // 移除这行限制，允许重复攻击
-        // if (this.state == ZombieState.Attack) return;
-
         if (event.otherCollider.getGroup() === ColliderGroup.Building ||
             event.otherCollider.getGroup() === ColliderGroup.Hunter) {
             this.state = ZombieState.Attack;
             this._attackTarget = event.otherCollider.node;
             this.capsuleCollider.enabled = false;
 
-            // 面向攻击目标
             if (this._attackTarget && isValid(this._attackTarget)) {
                 const targetPos = this._attackTarget.worldPosition;
                 const currentPos = this.node.worldPosition;
@@ -133,7 +85,6 @@ export class Zombie extends Component {
 
             this.playAni(attackAniName);
 
-            // 恢复动画结束监听，攻击完成后恢复移动状态
             this.ske.once(SkeletalAnimation.EventType.FINISHED, (() => {
                 this.state = ZombieState.Run;
                 this.capsuleCollider.enabled = true;
@@ -179,9 +130,8 @@ export class Zombie extends Component {
 
                 this.playAni(ZombieState.Run);
 
-                // 旋转朝向目标 - 正前方为z轴
-                if (direction.length() > 0.1) { // 避免除零错误
-                    direction.y = 0; // 保持在水平面上
+                if (direction.length() > 0.1) { 
+                    direction.y = 0; 
                     const angle = Math.atan2(direction.x, direction.z) * 180 / Math.PI;
                     this.node.eulerAngles = new Vec3(0, angle, 0);
                 }
@@ -238,7 +188,6 @@ export class Zombie extends Component {
     protected onDestroy(): void {
         if (this.capsuleCollider) {
             this.capsuleCollider.off('onTriggerEnter', this.onTriggerEnter, this);
-            // this.capsuleCollider.off('onCollisionEnter', this.onCollisionEnter, this);
         }
     }
 

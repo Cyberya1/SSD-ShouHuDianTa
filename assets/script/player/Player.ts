@@ -1,6 +1,6 @@
-import { _decorator, BoxCollider, Camera, CapsuleCollider, CCBoolean, CCFloat, Component, ICollisionEvent, isValid, Label, Node, PhysicsSystem, RigidBody, Sprite, UIOpacity, Vec3 } from 'cc';
+import { _decorator, Camera, CCBoolean, Component, isValid, Node, RigidBody, Sprite, UIOpacity, Vec3 } from 'cc';
 import { Joystick } from './Joystick';
-import { ColliderGroup, PlayerInfo, RESOURCE_TYPE } from '../config/GameData';
+import { PlayerInfo } from '../config/GameData';
 import { ZombieMager } from '../zombie/ZombieMager';
 import { Zombie } from '../zombie/Zombie';
 import { GameMager } from '../GameMager';

@@ -1,6 +1,4 @@
-import { _decorator, CCBoolean, CCFloat, Component, Node, Vec3 } from 'cc';
-import { EVENT_TYPE, IEvent } from '../tools/CustomEvent';
-import { Player } from './Player';
+import { _decorator, CCFloat, Component, Node, Vec3 } from 'cc';
 import { Enum } from 'cc';
 const { ccclass, property } = _decorator;
 

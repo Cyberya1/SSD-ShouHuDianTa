@@ -1,36 +1,70 @@
+/**
+ * A个小麦=B个麦垛
+ * 1个麦垛=C个金币
+ */
+export const GameInfo = {
+    A: 4,
+    B: 1,
+    C: 2,
+}
 
+/**
+ * 僵尸属性
+ * first 第一波加载数量
+ * second 第二波加载数量
+ * HP: 血量
+ * Attack: 攻击力
+ * speed: 移动速度
+ * Meat: 掉落肉数量
+ */
 export const ZombieInfo = {
-    Furst: 20,   //第一波
+    First: 20,   //第一波
     Second: 100, //第二波
+
     Big: {
         HP: 300,
         Attack: 20,
         Speed: 1.5,
         Meat: 3,
-        AttackRange: 5,
-        AttackInterval: 5,
     }
-    , Small: {
+    ,
+    Small: {
         HP: 100,
         Attack: 10,
         Speed: 1.5,
         Meat: 1,
-        AttackRange: 3,
-        AttackInterval: 3,
     }
-
 }
 
+/**
+ * 猎人属性
+ * HP: 血量
+ * Attack: 攻击力
+ * speed: 移动速度
+ * AttackRange: 攻击范围
+ * Max: 最大数量
+ * Current: 当前数量
+ * Meat: 需要肉的数量
+ */
 export const HunterInfo = {
     HP: 100,
     Attack: 50,
     Speed: 5,
     AttackRange: 3,
-    AttackInterval: 1,
     Max: 2,
     Current: 0,
+    Meat: 10,
 }
 
+/**
+ * 玩家属性
+ * HP: 血量
+ * Attack: 攻击力
+ * speed: 移动速度
+ * AttackRange: 攻击范围
+ * AttackSpeed: 攻击速度
+ * CollectRange: 收集范围
+ */
 export const PlayerInfo = {
     HP: 1000,
     Attack: 100,
@@ -40,10 +74,13 @@ export const PlayerInfo = {
     CollectRange: 10,
 }
 
-// export const WallInfo = {
-//     HP: 3000,
-// }
-
+/**
+ * 塔属性
+ * HP: 血量
+ * Attack: 攻击力
+ * AttackRange: 攻击范围
+ * AttackInterval: 攻击间隔
+ */
 export const TowerInfo = {
     Level1: {
         HP: 5000,
@@ -59,6 +96,22 @@ export const TowerInfo = {
         AttackInterval: 0.5,
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const ColliderGroup = {
     Default: 1 << 0,
@@ -80,7 +133,6 @@ export const ColliderGroup = {
     Hunter: 1 << 8,
 }
 
-
 /** 
  * 地标类型
  * None: 无
@@ -100,21 +152,6 @@ export enum RESOURCE_TYPE {
     NONE = "none",
     MEAT = "meat",
     WHEAT = "wheat",
-}
-
-export const ResouceInfo = {
-    // [RESOURCE_TYPE.MEAT]: {
-    //     HP: 100,
-    //     Attack: 10,
-    //     Speed: 2,
-    //     Meat: 3,
-    // },
-    // [RESOURCE_TYPE.WHEAT]: {
-    //     HP: 100,
-    //     Attack: 10,
-    //     Speed: 2,
-    //     Meat: 3,
-    // }
 }
 
 /**

@@ -1,7 +1,7 @@
 import { _decorator, BoxCollider, Component, Enum, ICollisionEvent, Node } from 'cc';
 import { Player } from '../player/Player';
 import { Vec3 } from 'cc';
-import { LandmarkType } from '../config/GameData';
+import { GameInfo, HunterInfo, LandmarkType } from '../config/GameData';
 import { Tween } from 'cc';
 import { director } from 'cc';
 import { Label } from 'cc';
@@ -82,24 +82,19 @@ export class Landmark extends Component {
 
                     if (this.landmarkType === LandmarkType.SubmitWheat) {
                         wheatNumber++;
-                        for (let i = 0; i < 3; i++) {
+                        for (let i = 0; i < GameInfo.C; i++) {
                             this.scheduleOnce(() => {
                                 UIMager.instance.loadGoldToUI();
                             }, 0.1 * i)
                         }
-                        // UIMager.instance.loadGoldToUI();
                     }
                     if (this.landmarkType === LandmarkType.SubmitMeat) {
                         meatNumber++;
-                        if (meatNumber == 1) {
+                        if (meatNumber == HunterInfo.Meat) {
                             meatNumber = 0;
                             HunterMager.instance.loadHunter();
                         }
                     }
-
-                    // 逻辑。。。。
-                    // 提交小麦获取金币
-                    // 提交肉召唤猎人
                     node.destroy();
                 })
                 .start();

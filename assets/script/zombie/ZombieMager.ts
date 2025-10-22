@@ -12,35 +12,27 @@ export enum ZombieType {
 
 @ccclass('ZombieMager')
 export class ZombieMager extends Component {
-
     public static ins: ZombieMager = null;
 
     @property(Prefab) smallZombie: Prefab = null;
     @property(Prefab) bigZombie: Prefab = null;
-
     @property([Node]) points: Node[] = [];
 
-    private gameStart: boolean = false;
-
     Zombies: Zombie[] = [];
-
     zombieTotal: number = 0;
 
-    // first: number = 20;
-    // second: number = 100;
 
     protected onLoad(): void {
         ZombieMager.ins = this;
 
         IEvent.on(EVENT_TYPE.ZOMBIE_DIED, this.zombieDied, this);
         IEvent.on(EVENT_TYPE.GAME_START, (() => {
-            this.gameStart = true;
             this.loadFirstZombies();
         }));
     }
 
     loadFirstZombies() {
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < ZombieInfo.First; i++) {
             this.scheduleOnce(() => {
                 this.loadZombie();
             }, 0.2 * i);
@@ -48,7 +40,7 @@ export class ZombieMager extends Component {
     }
 
     loadSecondZombies() {
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < ZombieInfo.Second; i++) {
             this.scheduleOnce(() => {
                 this.loadZombie();
             }, 0.2 * i);
@@ -61,15 +53,6 @@ export class ZombieMager extends Component {
         this.scheduleOnce(() => {
             die_node.destroy();
         }, 0)
-
-        // // boss死亡加载两个
-        // if (type == ZombieType.Big) {
-        //     for (let i = 0; i < 2; i++) {
-        //         this.scheduleOnce(() => { this.loadZombie(); }, i * 0.1)
-        //     }
-        // } else {
-        //     this.scheduleOnce(() => { this.loadZombie(); }, 0.1)
-        // }
     }
 
     loadZombie() {
