@@ -1,0 +1,290 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "3f7a9": {
+      "importer": "gltf-mesh",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@3f7a9",
+      "displayName": "",
+      "id": "3f7a9",
+      "name": "xiaosangshi.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1232
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 5.099999904632568
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "c2696": {
+      "importer": "gltf-animation",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@c2696",
+      "displayName": "",
+      "id": "c2696",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9666666666666667
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9292d": {
+      "importer": "gltf-animation",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@9292d",
+      "displayName": "",
+      "id": "9292d",
+      "name": "Run.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 1.6666666666666667,
+          "to": 2.2666666666666666
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "2cd1c": {
+      "importer": "gltf-animation",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@2cd1c",
+      "displayName": "",
+      "id": "2cd1c",
+      "name": "Attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 3.033333333333333,
+          "to": 3.7
+        },
+        "events": [
+          {
+            "frame": 0.5,
+            "func": "onAttack",
+            "params": []
+          }
+        ]
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "73d50": {
+      "importer": "gltf-animation",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@73d50",
+      "displayName": "",
+      "id": "73d50",
+      "name": "Die.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 3.7333333333333334,
+          "to": 5.099999904632568
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 23
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d90a4": {
+      "importer": "gltf-material",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@d90a4",
+      "displayName": "",
+      "id": "d90a4",
+      "name": "01 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "76b72": {
+      "importer": "gltf-scene",
+      "uuid": "afbd487e-9e98-45f8-a8e7-f79cff984a8b@76b72",
+      "displayName": "",
+      "id": "76b72",
+      "name": "丧尸.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 5.099999904632568,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 5.099999904632568,
+            "wrapMode": 2,
+            "previousId": "73b7f"
+          },
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 0.9666666666666667,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "c2696"
+          },
+          {
+            "name": "Run",
+            "from": 1.6666666666666667,
+            "to": 2.2666666666666666,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "9292d"
+          },
+          {
+            "name": "Attack",
+            "from": 3.033333333333333,
+            "to": 3.7,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "2cd1c"
+          },
+          {
+            "name": "Die",
+            "from": 3.7333333333333334,
+            "to": 5.099999904632568,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "73d50"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "afbd487e-9e98-45f8-a8e7-f79cff984a8b@3f7a9"
+      ],
+      "skeletons": [
+        "afbd487e-9e98-45f8-a8e7-f79cff984a8b@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "afbd487e-9e98-45f8-a8e7-f79cff984a8b@d90a4"
+      ],
+      "scenes": [
+        "afbd487e-9e98-45f8-a8e7-f79cff984a8b@76b72"
+      ]
+    }
+  }
+}

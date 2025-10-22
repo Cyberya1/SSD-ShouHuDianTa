@@ -1,0 +1,328 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "ad49f": {
+      "importer": "gltf-mesh",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@ad49f",
+      "displayName": "",
+      "id": "ad49f",
+      "name": "dasangshi.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1482
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 7.133333206176758
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "c2696": {
+      "importer": "gltf-animation",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@c2696",
+      "displayName": "",
+      "id": "c2696",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9292d": {
+      "importer": "gltf-animation",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@9292d",
+      "displayName": "",
+      "id": "9292d",
+      "name": "Run.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 1.6666666666666667,
+          "to": 2.2666666666666666
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "2cd1c": {
+      "importer": "gltf-animation",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@2cd1c",
+      "displayName": "",
+      "id": "2cd1c",
+      "name": "Attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 3.033333333333333,
+          "to": 3.6666666666666665
+        },
+        "events": [
+          {
+            "frame": 0.5,
+            "func": "onAttack",
+            "params": []
+          }
+        ]
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "73d50": {
+      "importer": "gltf-animation",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@73d50",
+      "displayName": "",
+      "id": "73d50",
+      "name": "Die.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 3.7,
+          "to": 5.033333333333333
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "7fee7": {
+      "importer": "gltf-animation",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@7fee7",
+      "displayName": "",
+      "id": "7fee7",
+      "name": "_Attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 5.666666666666667,
+          "to": 7.133333206176758
+        },
+        "events": [
+          {
+            "frame": 1.1666666666666667,
+            "func": "onAttack",
+            "params": []
+          }
+        ]
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 21
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d90a4": {
+      "importer": "gltf-material",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@d90a4",
+      "displayName": "",
+      "id": "d90a4",
+      "name": "01 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "54b6b": {
+      "importer": "gltf-scene",
+      "uuid": "29c3f02a-d540-4ac9-ae8b-3472905cbf08@54b6b",
+      "displayName": "",
+      "id": "54b6b",
+      "name": "大丧尸.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 7.133333206176758,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 7.133333206176758,
+            "wrapMode": 2,
+            "previousId": "73b7f"
+          },
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "c2696"
+          },
+          {
+            "name": "Run",
+            "from": 1.6666666666666667,
+            "to": 2.2666666666666666,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "9292d"
+          },
+          {
+            "name": "Attack",
+            "from": 3.033333333333333,
+            "to": 3.6666666666666665,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "2cd1c"
+          },
+          {
+            "name": "Die",
+            "from": 3.7,
+            "to": 5.033333333333333,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "73d50"
+          },
+          {
+            "name": "_Attack",
+            "from": 5.666666666666667,
+            "to": 7.133333206176758,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "7fee7"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "29c3f02a-d540-4ac9-ae8b-3472905cbf08@ad49f"
+      ],
+      "skeletons": [
+        "29c3f02a-d540-4ac9-ae8b-3472905cbf08@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "29c3f02a-d540-4ac9-ae8b-3472905cbf08@d90a4"
+      ],
+      "scenes": [
+        "29c3f02a-d540-4ac9-ae8b-3472905cbf08@54b6b"
+      ]
+    }
+  }
+}

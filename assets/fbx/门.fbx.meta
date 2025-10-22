@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d7a4435d-b4ba-4530-8934-49cfb50f3150",
+  "files": [],
+  "subMetas": {
+    "b00ad": {
+      "importer": "gltf-mesh",
+      "uuid": "d7a4435d-b4ba-4530-8934-49cfb50f3150@b00ad",
+      "displayName": "",
+      "id": "b00ad",
+      "name": "men.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1454
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "db4d2": {
+      "importer": "gltf-material",
+      "uuid": "d7a4435d-b4ba-4530-8934-49cfb50f3150@db4d2",
+      "displayName": "",
+      "id": "db4d2",
+      "name": "02 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "336ad": {
+      "importer": "gltf-scene",
+      "uuid": "d7a4435d-b4ba-4530-8934-49cfb50f3150@336ad",
+      "displayName": "",
+      "id": "336ad",
+      "name": "门.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "d7a4435d-b4ba-4530-8934-49cfb50f3150@b00ad"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "d7a4435d-b4ba-4530-8934-49cfb50f3150@db4d2"
+      ],
+      "scenes": [
+        "d7a4435d-b4ba-4530-8934-49cfb50f3150@336ad"
+      ]
+    }
+  }
+}

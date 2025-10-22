@@ -1,0 +1,187 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "9d0fb": {
+      "importer": "gltf-mesh",
+      "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@9d0fb",
+      "displayName": "",
+      "id": "9d0fb",
+      "name": "maizi.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 126
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4.958333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a2a2d": {
+      "importer": "gltf-embeded-image",
+      "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@a2a2d",
+      "displayName": "",
+      "id": "a2a2d",
+      "name": "file14.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "8852e": {
+      "importer": "texture",
+      "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@8852e",
+      "displayName": "",
+      "id": "8852e",
+      "name": "file14.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@a2a2d"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0199a": {
+      "importer": "gltf-scene",
+      "uuid": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@0199a",
+      "displayName": "",
+      "id": "0199a",
+      "name": "小麦.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file14",
+        "uri": "c3c77cac-e9f2-4643-a231-9213cd84a5c3@a2a2d"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 4.958333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 4.958333492279053,
+            "wrapMode": 2,
+            "previousId": "73b7f"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "c3c77cac-e9f2-4643-a231-9213cd84a5c3@9d0fb"
+      ],
+      "skeletons": [],
+      "textures": [
+        "c3c77cac-e9f2-4643-a231-9213cd84a5c3@8852e"
+      ],
+      "materials": [
+        "c3c77cac-e9f2-4643-a231-9213cd84a5c3@8d883"
+      ],
+      "scenes": [
+        "c3c77cac-e9f2-4643-a231-9213cd84a5c3@0199a"
+      ]
+    }
+  }
+}

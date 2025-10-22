@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3f745640-7c20-4bf0-a437-7822e61b33ca",
+  "files": [],
+  "subMetas": {
+    "6938e": {
+      "importer": "gltf-mesh",
+      "uuid": "3f745640-7c20-4bf0-a437-7822e61b33ca@6938e",
+      "displayName": "",
+      "id": "6938e",
+      "name": "fbx_xst.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 166
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "af224": {
+      "importer": "gltf-embeded-image",
+      "uuid": "3f745640-7c20-4bf0-a437-7822e61b33ca@af224",
+      "displayName": "",
+      "id": "af224",
+      "name": "EnvSamplerTex.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "f1c0d": {
+      "importer": "texture",
+      "uuid": "3f745640-7c20-4bf0-a437-7822e61b33ca@f1c0d",
+      "displayName": "",
+      "id": "f1c0d",
+      "name": "EnvSamplerTex.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3f745640-7c20-4bf0-a437-7822e61b33ca@af224"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fc278": {
+      "importer": "gltf-material",
+      "uuid": "3f745640-7c20-4bf0-a437-7822e61b33ca@fc278",
+      "displayName": "",
+      "id": "fc278",
+      "name": "M_PolygonNatureBiomesMeadow.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "db10e": {
+      "importer": "gltf-scene",
+      "uuid": "3f745640-7c20-4bf0-a437-7822e61b33ca@db10e",
+      "displayName": "",
+      "id": "db10e",
+      "name": "小石头.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "EnvSamplerTex",
+        "uri": "3f745640-7c20-4bf0-a437-7822e61b33ca@af224"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "3f745640-7c20-4bf0-a437-7822e61b33ca@6938e"
+      ],
+      "skeletons": [],
+      "textures": [
+        "3f745640-7c20-4bf0-a437-7822e61b33ca@f1c0d"
+      ],
+      "materials": [
+        "3f745640-7c20-4bf0-a437-7822e61b33ca@fc278"
+      ],
+      "scenes": [
+        "3f745640-7c20-4bf0-a437-7822e61b33ca@db10e"
+      ]
+    }
+  }
+}

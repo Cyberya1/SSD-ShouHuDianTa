@@ -1,0 +1,275 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "a4571": {
+      "importer": "gltf-mesh",
+      "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989@a4571",
+      "displayName": "",
+      "id": "a4571",
+      "name": "dianchang_1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1242
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7ca02": {
+      "importer": "gltf-mesh",
+      "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989@7ca02",
+      "displayName": "",
+      "id": "7ca02",
+      "name": "bujian.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 3148
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3.3333332538604736
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "1c7e7": {
+      "importer": "gltf-material",
+      "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989@1c7e7",
+      "displayName": "",
+      "id": "1c7e7",
+      "name": "01 - Default-0.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "949ce": {
+      "importer": "gltf-material",
+      "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989@949ce",
+      "displayName": "",
+      "id": "949ce",
+      "name": "01 - Default-1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ad947": {
+      "importer": "gltf-scene",
+      "uuid": "af142739-0658-44bc-ace5-2d4e9b0cc989@ad947",
+      "displayName": "",
+      "id": "ad947",
+      "name": "升级电塔.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 3.3333332538604736,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 3.3333332538604736,
+            "wrapMode": 2,
+            "previousId": "73b7f"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "af142739-0658-44bc-ace5-2d4e9b0cc989@a4571",
+        "af142739-0658-44bc-ace5-2d4e9b0cc989@7ca02"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "af142739-0658-44bc-ace5-2d4e9b0cc989@1c7e7",
+        "af142739-0658-44bc-ace5-2d4e9b0cc989@949ce"
+      ],
+      "scenes": [
+        "af142739-0658-44bc-ace5-2d4e9b0cc989@ad947"
+      ]
+    },
+    "materials": {
+      "af142739-0658-44bc-ace5-2d4e9b0cc989@1c7e7": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 220,
+              "g": 205,
+              "b": 226,
+              "a": 255
+            },
+            "roughness": 0.7,
+            "metallic": 0.5,
+            "mainTexture": {
+              "__uuid__": "8546ec51-8f08-4c00-9e43-8403408bf668@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

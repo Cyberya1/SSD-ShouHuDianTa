@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f8304097-582e-413f-a7bf-fe9fb65ac3bf",
+  "files": [],
+  "subMetas": {
+    "b00ad": {
+      "importer": "gltf-mesh",
+      "uuid": "f8304097-582e-413f-a7bf-fe9fb65ac3bf@b00ad",
+      "displayName": "",
+      "id": "b00ad",
+      "name": "men.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1454
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "db4d2": {
+      "importer": "gltf-material",
+      "uuid": "f8304097-582e-413f-a7bf-fe9fb65ac3bf@db4d2",
+      "displayName": "",
+      "id": "db4d2",
+      "name": "02 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "336ad": {
+      "importer": "gltf-scene",
+      "uuid": "f8304097-582e-413f-a7bf-fe9fb65ac3bf@336ad",
+      "displayName": "",
+      "id": "336ad",
+      "name": "门.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "f8304097-582e-413f-a7bf-fe9fb65ac3bf@b00ad"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "f8304097-582e-413f-a7bf-fe9fb65ac3bf@db4d2"
+      ],
+      "scenes": [
+        "f8304097-582e-413f-a7bf-fe9fb65ac3bf@336ad"
+      ]
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "86a46dfc-ebc6-4da2-9add-869d5a017221",
+  "files": [],
+  "subMetas": {
+    "8bb86": {
+      "importer": "gltf-mesh",
+      "uuid": "86a46dfc-ebc6-4da2-9add-869d5a017221@8bb86",
+      "displayName": "",
+      "id": "8bb86",
+      "name": "pCylinder5.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 534
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9ae7": {
+      "importer": "gltf-material",
+      "uuid": "86a46dfc-ebc6-4da2-9add-869d5a017221@f9ae7",
+      "displayName": "",
+      "id": "f9ae7",
+      "name": "standardSurface3.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fad73": {
+      "importer": "gltf-scene",
+      "uuid": "86a46dfc-ebc6-4da2-9add-869d5a017221@fad73",
+      "displayName": "",
+      "id": "fad73",
+      "name": "树.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "86a46dfc-ebc6-4da2-9add-869d5a017221@8bb86"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "86a46dfc-ebc6-4da2-9add-869d5a017221@f9ae7"
+      ],
+      "scenes": [
+        "86a46dfc-ebc6-4da2-9add-869d5a017221@fad73"
+      ]
+    }
+  }
+}

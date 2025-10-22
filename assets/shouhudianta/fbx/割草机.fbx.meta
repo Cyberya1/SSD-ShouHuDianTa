@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3ba8d81b-753d-43e6-9bbb-89f1460e4692",
+  "files": [],
+  "subMetas": {
+    "46540": {
+      "importer": "gltf-mesh",
+      "uuid": "3ba8d81b-753d-43e6-9bbb-89f1460e4692@46540",
+      "displayName": "",
+      "id": "46540",
+      "name": "Box001.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1053
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d90a4": {
+      "importer": "gltf-material",
+      "uuid": "3ba8d81b-753d-43e6-9bbb-89f1460e4692@d90a4",
+      "displayName": "",
+      "id": "d90a4",
+      "name": "01 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6ebb1": {
+      "importer": "gltf-scene",
+      "uuid": "3ba8d81b-753d-43e6-9bbb-89f1460e4692@6ebb1",
+      "displayName": "",
+      "id": "6ebb1",
+      "name": "割草机.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "3ba8d81b-753d-43e6-9bbb-89f1460e4692@46540"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "3ba8d81b-753d-43e6-9bbb-89f1460e4692@d90a4"
+      ],
+      "scenes": [
+        "3ba8d81b-753d-43e6-9bbb-89f1460e4692@6ebb1"
+      ]
+    }
+  }
+}

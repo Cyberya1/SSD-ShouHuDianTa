@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "5d559dac-4c51-4154-9ab6-40a31beeadba",
+  "files": [],
+  "subMetas": {
+    "b00ad": {
+      "importer": "gltf-mesh",
+      "uuid": "5d559dac-4c51-4154-9ab6-40a31beeadba@b00ad",
+      "displayName": "",
+      "id": "b00ad",
+      "name": "men.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1690
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d90a4": {
+      "importer": "gltf-material",
+      "uuid": "5d559dac-4c51-4154-9ab6-40a31beeadba@d90a4",
+      "displayName": "",
+      "id": "d90a4",
+      "name": "01 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d8cb9": {
+      "importer": "gltf-scene",
+      "uuid": "5d559dac-4c51-4154-9ab6-40a31beeadba@d8cb9",
+      "displayName": "",
+      "id": "d8cb9",
+      "name": "围栏.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "5d559dac-4c51-4154-9ab6-40a31beeadba@b00ad"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "5d559dac-4c51-4154-9ab6-40a31beeadba@d90a4"
+      ],
+      "scenes": [
+        "5d559dac-4c51-4154-9ab6-40a31beeadba@d8cb9"
+      ]
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cb54efb5-441b-4fd2-a787-b9cf2f60615c",
+  "files": [],
+  "subMetas": {
+    "24045": {
+      "importer": "gltf-material",
+      "uuid": "cb54efb5-441b-4fd2-a787-b9cf2f60615c@24045",
+      "displayName": "",
+      "id": "24045",
+      "name": "standardSurface2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9e069": {
+      "importer": "gltf-mesh",
+      "uuid": "cb54efb5-441b-4fd2-a787-b9cf2f60615c@9e069",
+      "displayName": "",
+      "id": "9e069",
+      "name": "yanshi_02.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 171
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ced9e": {
+      "importer": "gltf-scene",
+      "uuid": "cb54efb5-441b-4fd2-a787-b9cf2f60615c@ced9e",
+      "displayName": "",
+      "id": "ced9e",
+      "name": "岩石.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "cb54efb5-441b-4fd2-a787-b9cf2f60615c@9e069"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "cb54efb5-441b-4fd2-a787-b9cf2f60615c@24045"
+      ],
+      "scenes": [
+        "cb54efb5-441b-4fd2-a787-b9cf2f60615c@ced9e"
+      ]
+    }
+  }
+}
