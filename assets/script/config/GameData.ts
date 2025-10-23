@@ -100,6 +100,7 @@ export const TowerInfo = {
 export const WallInfo = {
     Attack: 10,
     AttackRange: 5,
+    
 }
 
 
