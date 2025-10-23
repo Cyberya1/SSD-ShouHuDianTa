@@ -10,6 +10,7 @@ import { CameraCtrl } from './player/CameraCtrl';
 import { Player } from './player/Player';
 import { UIOpacity } from 'cc';
 import { Tween } from 'cc';
+import { NavLine } from './common/NavLine';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameMager')
@@ -23,13 +24,15 @@ export class GameMager extends Component {
     @property(Label) startTip: Label = null;
     @property(Node) handTip: Node = null;
 
+    @property(NavLine) line: NavLine = null;
+    @property(Node) test: Node = null;
+
 
     private camera_pos: Vec3 = v3(-0.34456, 39.083, 28.920985);
     private _camera_pos: Vec3 = v3(-31.958, 39.083, 23.919);
 
     protected onLoad(): void {
         GameMager.ins = this;
-
 
         IEvent.on(EVENT_TYPE.GAME_OVER, this._GameOver, this);
     }
@@ -69,6 +72,11 @@ export class GameMager extends Component {
                 this.handTip.active = true;
             }
         }
+    }
+
+    protected lateUpdate(dt: number): void {
+        this.line.node.setWorldPosition(Player.ins.node.worldPosition);
+        this.line.init(this.test.getWorldPosition().clone());
     }
 
     GameEnd: boolean = false;

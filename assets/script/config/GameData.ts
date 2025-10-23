@@ -5,7 +5,7 @@
 export const GameInfo = {
     A: 4,
     B: 1,
-    C: 2,
+    C: 3,
 }
 
 /**
@@ -22,15 +22,15 @@ export const ZombieInfo = {
     Second: 100, //第二波
 
     Big: {
-        HP: 300,
-        Attack: 20,
-        Speed: 1.5,
+        HP: 500,
+        Attack: 30,
+        Speed: 1,
         Meat: 3,
     }
     ,
     Small: {
-        HP: 100,
-        Attack: 10,
+        HP: 200,
+        Attack: 15,
         Speed: 1.5,
         Meat: 1,
     }
@@ -47,13 +47,13 @@ export const ZombieInfo = {
  * Meat: 需要肉的数量
  */
 export const HunterInfo = {
-    HP: 100,
-    Attack: 50,
+    HP: 200,
+    Attack: 40,
     Speed: 5,
     AttackRange: 3,
     Max: 2,
     Current: 0,
-    Meat: 10,
+    Meat: 15,
 }
 
 /**
@@ -96,9 +96,6 @@ export const TowerInfo = {
         AttackInterval: 0.5,
     }
 }
-
-
-
 
 
 

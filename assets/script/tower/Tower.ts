@@ -60,8 +60,7 @@ export class Tower extends Component {
         this.schedule(() => {
             if (GameMager.ins.GameEnd) return;
             this.attack();
-            // }, TowerInfo.AttackInterval)
-        }, 0.5)
+        }, this.data.AttackInterval)
     }
 
     attack() {
@@ -112,6 +111,8 @@ export class Tower extends Component {
 
         if (this.level == 2) {
             this.data = TowerInfo.Level2;
+            this.level1AttackRangeTip.active = false;
+            this.level2AttackRangeTip.active = true;
             ZombieMager.ins.loadSecondZombies();
         }
         tween(this.node)

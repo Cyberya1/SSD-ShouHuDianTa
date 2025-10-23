@@ -39,12 +39,23 @@ export class ZombieMager extends Component {
         }
     }
 
+    // 第二波批次
+    private pc: number = 2;
     loadSecondZombies() {
-        for (let i = 0; i < ZombieInfo.Second; i++) {
+
+        for (let i = 0; i < ZombieInfo.Second / 2; i++) {
             this.scheduleOnce(() => {
                 this.loadZombie();
             }, 0.2 * i);
         }
+
+        this.scheduleOnce(() => {
+            for (let i = 0; i < ZombieInfo.Second / 2; i++) {
+                this.scheduleOnce(() => {
+                    this.loadZombie();
+                }, 0.2 * i);
+            }
+        }, 10)
     }
 
     zombieDied(die_node: Node, type: ZombieType) {
