@@ -4,6 +4,7 @@ import { ZombieMager } from '../zombie/ZombieMager';
 import { isValid } from 'cc';
 import { Vec3 } from 'cc';
 import { WallInfo } from '../config/GameData';
+import { GameMager } from '../GameMager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Wall')
@@ -11,7 +12,10 @@ export class Wall extends Component {
 
     private isAttacling: boolean = false;
 
+
+
     protected update(dt: number): void {
+        if (GameMager.ins.GameEnd) return;
         if (this.isAttacling) return;
         this.attack(Tower.ins.data.AttackInterval);
     }

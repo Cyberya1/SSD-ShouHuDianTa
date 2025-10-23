@@ -23,8 +23,8 @@ export class Player extends Component {
     @property(Camera)
     mainCamera: Camera = null!; // 主相机节点
 
-    @property(Node)
-    hp: Node = null; // HP节点
+    // @property(Node)
+    // hp: Node = null; // HP节点
 
     @property({
         type: CCBoolean,
@@ -42,9 +42,9 @@ export class Player extends Component {
     @property({ type: Node, tooltip: "物品挂载点" }) point2: Node = null;
 
     private rigidBody: RigidBody = null;
-    private hpbar: Sprite = null;
-    private uio: UIOpacity = null;
-    private currentHp: number = PlayerInfo.HP;
+    // private hpbar: Sprite = null;
+    // private uio: UIOpacity = null;
+    // private currentHp: number = PlayerInfo.HP;
     private startGame: boolean = false;
 
     private playerAni: SkeletalAnimation = null;
@@ -53,12 +53,12 @@ export class Player extends Component {
         Player.ins = this;
 
         this.rigidBody = this.getComponent(RigidBody);
-        this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
-        this.uio = this.hp.getComponent(UIOpacity);
+        // this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
+        // this.uio = this.hp.getComponent(UIOpacity);
         this.playerAni = this.getComponent(SkeletalAnimation);
 
 
-        this.uio.opacity = 0;
+        // this.uio.opacity = 0;
         IEvent.on(EVENT_TYPE.GAME_START, () => {
             this.startGame = true;
         });
@@ -123,23 +123,23 @@ export class Player extends Component {
         }
     }
 
-    private hpTween: Tween<Node> = null;
-    beHurt(num: number) {
-        this.currentHp -= num;
-        this.hpbar.fillRange = this.currentHp / PlayerInfo.HP;
-        this.uio.opacity = 255;
+    // private hpTween: Tween<Node> = null;
+    // beHurt(num: number) {
+    //     this.currentHp -= num;
+    //     this.hpbar.fillRange = this.currentHp / PlayerInfo.HP;
+    //     this.uio.opacity = 255;
 
 
-        if (this.hpTween) {
-            this.hpTween.stop();
-        }
-        this.hpTween = tween(this.hp)
-            .delay(3)
-            .call(() => {
-                this.uio.opacity = 0;
-            })
-            .start();
-    }
+    //     if (this.hpTween) {
+    //         this.hpTween.stop();
+    //     }
+    //     this.hpTween = tween(this.hp)
+    //         .delay(3)
+    //         .call(() => {
+    //             this.uio.opacity = 0;
+    //         })
+    //         .start();
+    // }
 
     update(deltaTime: number) {
         if (!this.startGame) return;
@@ -216,9 +216,9 @@ export class Player extends Component {
         }
     }
 
-    protected lateUpdate(dt: number): void {
-        this.hp.setWorldRotation(GameMager.ins.camera.node.worldRotation);
-    }
+    // protected lateUpdate(dt: number): void {
+    //     this.hp.setWorldRotation(GameMager.ins.camera.node.worldRotation);
+    // }
 
     // 角度插值函数（处理360度环绕）
     private lerpAngle(current: number, target: number, factor: number): number {

@@ -110,8 +110,8 @@ export class Tower extends Component {
 
         if (this.level == 2) {
             this.data = TowerInfo.Level2;
-            this.level1AttackRangeTip.active = false;
-            this.level2AttackRangeTip.active = true;
+            // this.level1AttackRangeTip.active = false;
+            // this.level2AttackRangeTip.active = true;
             ZombieMager.ins.loadSecondZombies();
         }
         tween(this.node)

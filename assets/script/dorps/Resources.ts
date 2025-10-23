@@ -19,15 +19,11 @@ export class Resources extends Component {
     @property(CCFloat) offsetZ: number = 0;
     @property(CCFloat) offsetY: number = 0;
 
-
-    private checkRange: number = 5;
+    private checkRange: number = 7;
     private tween: Tween<Node> = null;
 
     // 是否可以检测玩家
     public bol: boolean = false;
-
-    protected onLoad(): void {
-    }
 
     timer: any = null;
 
@@ -56,7 +52,7 @@ export class Resources extends Component {
             const _point = this.type == RESOURCE_TYPE.MEAT ? playerCom.point1 : playerCom.point2; // 挂点
 
             if (_point.children.length >= 50) {
-                UIMager.instance.maxTipAni();
+                // UIMager.instance.maxTipAni();
                 return;
             }
 
@@ -75,13 +71,6 @@ export class Resources extends Component {
             this.tween = new Tween(this.node)
                 .bezierTo3D(0.3, meatPos, controlPos, endPos)
                 .call(() => {
-
-                    // const _node = DropsMager.instance.getResourceNode(this.type);
-                    // _node.parent = _point;
-                    // const list = this.type == RESOURCE_TYPE.MEAT ? playerCom.meatList : playerCom.wheatList;
-                    // list.push(_node);
-                    // this.node.destroy();
-
                     // 保存世界坐标
                     const worldPos = this.node.worldPosition.clone();
 

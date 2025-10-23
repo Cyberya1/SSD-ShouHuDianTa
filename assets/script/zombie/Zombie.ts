@@ -1,6 +1,6 @@
 import { _decorator, CapsuleCollider, Component, ICollisionEvent, isValid, Node, Sprite, UIOpacity, Vec3 } from 'cc';
 import { ZombieMager, ZombieType } from './ZombieMager';
-import { ColliderGroup, RESOURCE_TYPE, ResquetBody } from '../config/GameData';
+import { ColliderGroup, RESOURCE_TYPE, ResquetBody, ZombieInfo } from '../config/GameData';
 import { Wall } from '../wall/Wall';
 import { EVENT_TYPE, IEvent } from '../tools/CustomEvent';
 import { GameMager } from '../GameMager';
@@ -38,7 +38,7 @@ export class Zombie extends Component {
     protected onLoad(): void {
         this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
         this.uio = this.hp.getComponent(UIOpacity);
-        this.playAni(ZombieState.Idle);
+        this.playAni(ZombieState.Run);
     }
 
     protected start(): void {
@@ -82,14 +82,13 @@ export class Zombie extends Component {
                 const randomNum = Math.floor(Math.random() * 2) + 1;
                 if (randomNum === 2) attackAniName = ZombieState._Attack;
             }
-
             this.playAni(attackAniName);
 
             this.ske.once(SkeletalAnimation.EventType.FINISHED, (() => {
                 this.state = ZombieState.Run;
+                // this._attackTarget = null;
                 this.capsuleCollider.enabled = true;
-                this._attackTarget = null;
-                this.playAni(ZombieState.Idle);
+                this.playAni(ZombieState.Attack);
             }));
         }
     }
@@ -130,8 +129,8 @@ export class Zombie extends Component {
 
                 this.playAni(ZombieState.Run);
 
-                if (direction.length() > 0.1) { 
-                    direction.y = 0; 
+                if (direction.length() > 0.1) {
+                    direction.y = 0;
                     const angle = Math.atan2(direction.x, direction.z) * 180 / Math.PI;
                     this.node.eulerAngles = new Vec3(0, angle, 0);
                 }
@@ -173,8 +172,8 @@ export class Zombie extends Component {
     }
 
     private playAni(state: ZombieState) {
-        this.state = state;
         if (this.ske.getState(state)?.isPlaying) return;
+        this.state = state;
         this.ske.play(state);
     }
 
@@ -190,8 +189,6 @@ export class Zombie extends Component {
             this.capsuleCollider.off('onTriggerEnter', this.onTriggerEnter, this);
         }
     }
-
-
 }
 
 
