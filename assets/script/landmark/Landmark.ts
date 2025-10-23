@@ -7,6 +7,8 @@ import { director } from 'cc';
 import { Label } from 'cc';
 import { HunterMager } from '../hunter/HunterMager';
 import { UIMager } from '../UIMager';
+import { Sprite } from 'cc';
+import { Color } from 'cc';
 const { ccclass, property } = _decorator;
 
 // let mark: Landmark = null;
@@ -19,6 +21,8 @@ export class Landmark extends Component {
 
     @property({ type: Enum(LandmarkType), displayName: "地标类型" })
     landmarkType: LandmarkType = LandmarkType.None;
+
+    @property(Sprite) k: Sprite = null;
 
     private boxCollider: BoxCollider = null!;
 
@@ -77,7 +81,7 @@ export class Landmark extends Component {
             )
 
             new Tween(node)
-                .bezierTo3D(0.3, startPos, controlPos, endPos)
+                .bezierTo3D(0.2, startPos, controlPos, endPos)
                 .call(() => {
 
                     if (this.landmarkType === LandmarkType.SubmitWheat) {
@@ -98,15 +102,17 @@ export class Landmark extends Component {
                     node.destroy();
                 })
                 .start();
-        }, 0.1)
+        }, 0.02)
     }
 
     onTriggerEnter(event: ICollisionEvent) {
         this.isCollideing = true;
+        this.k.color = Color.GREEN;
     }
 
     onTriggerExit(event: ICollisionEvent) {
         this.isCollideing = false;
+        this.k.color = Color.WHITE;
     }
 
     protected onDestroy(): void {

@@ -17,14 +17,12 @@ export class Wall extends Component {
     }
 
     private attack(dt: number) {
-        console.log("Wall attack");
         this.isAttacling = true;
         ZombieMager.ins.Zombies.forEach(zombie => {
             const bol = Vec3.distance(zombie.node.worldPosition, this.node.worldPosition) < WallInfo.AttackRange;
             if (bol) {
                 if (zombie && isValid(zombie) && zombie.node && isValid(zombie.node)) {
                     zombie.beHurt(WallInfo.Attack);
-                    console.log("Wall attack zombie", zombie.node.name);
                 }
             }
         });
