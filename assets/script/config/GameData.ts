@@ -85,7 +85,7 @@ export const TowerInfo = {
     Level1: {
         HP: 5000,
         Attack: 50,
-        AttackRange: 16,
+        AttackRange: 16.5,
         AttackInterval: 1,
     }
     ,
