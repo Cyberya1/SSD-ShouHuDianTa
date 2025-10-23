@@ -83,14 +83,14 @@ export const PlayerInfo = {
  */
 export const TowerInfo = {
     Level1: {
-        HP: 1000,
+        HP: 1500,
         Attack: 50,
         AttackRange: 16,
         AttackInterval: 2,
     }
     ,
     Level2: {
-        HP: 1000,
+        HP: 1500,
         Attack: 100,
         AttackRange: 21.5,
         AttackInterval: 1,
