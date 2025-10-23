@@ -32,7 +32,7 @@ export class Tower extends Component {
     private level: number = 1;
     private level_1_need_gold: number = 50;
     private level_2_need_gold: number = 500;
-    private currentHP: number = 0;
+    private currentHP: number = TowerInfo.HP;
     private uio: UIOpacity = null;
     private hpbar: Sprite = null;
 
@@ -41,7 +41,6 @@ export class Tower extends Component {
     protected onLoad(): void {
         Tower.ins = this;
         this.data = TowerInfo.Level1;
-        this.currentHP = this.data.HP;
         this.uio = this.hp.getComponent(UIOpacity);
         this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
     }
@@ -84,7 +83,7 @@ export class Tower extends Component {
 
     beHurt(num: number) {
         this.currentHP -= num;
-        this.hpbar.fillRange = this.currentHP / this.data.HP;
+        this.hpbar.fillRange = this.currentHP / TowerInfo.HP;
 
         if (this.currentHP <= 0) {
             IEvent.emit(EVENT_TYPE.GAME_OVER);
