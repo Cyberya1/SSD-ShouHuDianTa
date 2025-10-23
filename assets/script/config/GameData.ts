@@ -3,7 +3,7 @@
  * 1个麦垛=C个金币
  */
 export const GameInfo = {
-    A: 6,
+    A: 7,
     B: 1,
     C: 4,
 }
@@ -30,7 +30,7 @@ export const ZombieInfo = {
     ,
     Small: {
         HP: 200,
-        Attack: 20,
+        Attack: 25,
         Speed: 1.5,
         Meat: 1,
     }
