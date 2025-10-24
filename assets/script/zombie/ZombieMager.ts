@@ -31,6 +31,14 @@ export class ZombieMager extends Component {
         }));
     }
 
+    private isSecondZombiesLoaded: boolean = false;
+    protected start(): void {
+        if (this.isSecondZombiesLoaded) return;
+        this.scheduleOnce(() => {
+            this.loadSecondZombies();
+        }, 100)
+    }
+
     loadFirstZombies() {
         for (let i = 0; i < ZombieInfo.First; i++) {
             this.scheduleOnce(() => {

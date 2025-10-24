@@ -23,7 +23,7 @@ export const ZombieInfo = {
 
     Big: {
         HP: 500,
-        Attack: 30,
+        Attack: 80,
         Speed: 1,
         Meat: 3,
     }
