@@ -52,6 +52,7 @@ export class HunterController extends Component {
 
 
     update(deltaTime: number) {
+        // if (!this.currentTarget || !isValid(this.currentTarget))
         if (this.state == HunterState.IDLE || this.state == HunterState.RUN) {
 
             // 优先移动到设定的目标点
@@ -80,6 +81,9 @@ export class HunterController extends Component {
                 }
             } else {
                 this.currentTarget = ZombieMager.ins.returnMinDistanceZombie(this.node);
+                if (!this.currentTarget || !isValid(this.currentTarget)) {
+                    this.playAni(HunterState.IDLE);
+                }
             }
         }
     }

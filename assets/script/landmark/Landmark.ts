@@ -25,7 +25,6 @@ export class Landmark extends Component {
     @property(Sprite) k: Sprite = null;
 
     private boxCollider: BoxCollider = null!;
-
     private isCollideing: boolean = false;
 
     protected onLoad(): void {
@@ -115,8 +114,8 @@ export class Landmark extends Component {
         this.k.color = Color.WHITE;
     }
 
-    protected onDestroy(): void {
-        this.boxCollider.off('onTriggerEnter', this.onTriggerEnter, this);
-        this.boxCollider.off('onTriggerExit', this.onTriggerExit, this);
-    }
+    // protected onDestroy(): void {
+    //     this.boxCollider.off('onTriggerEnter', this.onTriggerEnter, this);
+    //     this.boxCollider.off('onTriggerExit', this.onTriggerExit, this);
+    // }
 }

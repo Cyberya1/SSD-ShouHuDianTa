@@ -3,9 +3,9 @@
  * 1个麦垛=C个金币
  */
 export const GameInfo = {
-    A: 7,
+    A: 5,
     B: 1,
-    C: 4,
+    C: 1,
 }
 
 /**
@@ -23,14 +23,14 @@ export const ZombieInfo = {
 
     Big: {
         HP: 500,
-        Attack: 50,
+        Attack: 30,
         Speed: 1,
         Meat: 3,
     }
     ,
     Small: {
         HP: 200,
-        Attack: 25,
+        Attack: 10,
         Speed: 1.5,
         Meat: 1,
     }
@@ -66,7 +66,7 @@ export const HunterInfo = {
  * CollectRange: 收集范围
  */
 export const PlayerInfo = {
-    HP: 1000,
+    // HP: 1000,
     Attack: 30,
     Speed: 8,
     AttackRange: 3,
@@ -82,15 +82,13 @@ export const PlayerInfo = {
  * AttackInterval: 攻击间隔
  */
 export const TowerInfo = {
+    HP: 1500,
     Level1: {
-        HP: 1500,
         Attack: 50,
-        AttackRange: 16,
+        AttackRange: 16.5,
         AttackInterval: 2,
-    }
-    ,
+    },
     Level2: {
-        HP: 1500,
         Attack: 100,
         AttackRange: 21.5,
         AttackInterval: 1,
@@ -100,7 +98,6 @@ export const TowerInfo = {
 export const WallInfo = {
     Attack: 50,
     AttackRange: 5,
-
 }
 
 

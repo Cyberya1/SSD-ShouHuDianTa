@@ -1,6 +1,7 @@
 import { _decorator, Component, Node } from 'cc';
 import { NavLine } from './NavLine';
 import { CCFloat } from 'cc';
+import { Player } from '../player/Player';
 const { ccclass, property } = _decorator;
 
 @ccclass('PointConfig')
@@ -31,8 +32,16 @@ export class GuideCtrl extends Component {
     /** 当前引导点索引 */
     private index: number = 0;
 
+    private isActiveTip: boolean = false;
+
     protected onLoad(): void {
         GuideCtrl.ins = this;
+    }
+
+    protected update(dt: number): void {
+        this.line.node.setWorldPosition(Player.ins.node.worldPosition);
+        const point = this.points[this.index];
+        this.line.init(point.worldPosition.clone());
     }
 }
 
