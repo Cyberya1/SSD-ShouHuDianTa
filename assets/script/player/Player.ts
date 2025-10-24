@@ -1,64 +1,35 @@
-import { _decorator, Camera, CCBoolean, Component, isValid, Node, RigidBody, Sprite, UIOpacity, Vec3 } from 'cc';
+import { _decorator, Camera, CCBoolean, Component, isValid, Node, RigidBody, Vec3 } from 'cc';
 import { Joystick } from './Joystick';
 import { PlayerInfo } from '../config/GameData';
 import { ZombieMager } from '../zombie/ZombieMager';
 import { Zombie } from '../zombie/Zombie';
-import { GameMager } from '../GameMager';
-import { Tween } from 'cc';
-import { tween } from 'cc';
 import { SkeletalAnimation } from 'cc';
 import { EVENT_TYPE, IEvent } from '../tools/CustomEvent';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
 export class Player extends Component {
-
     public static ins: Player = null;
 
-    max: number = 50;
-
-    @property(Node)
-    joystick: Node = null!; // 虚拟摇杆节点
-
-    @property(Camera)
-    mainCamera: Camera = null!; // 主相机节点
-
-    @property(Node)
-    hp: Node = null; // HP节点
-
-    @property({
-        type: CCBoolean,
-        displayName: "相机朝向",
-        visible: function (this: Player) { return !!this.mainCamera; }
-    })
-    isCameraOrientation: boolean = true;
-
-    meatList: Node[] = [];
-    wheatList: Node[] = [];
-
-    // @property(Bag) bag: Bag = null;
-
+    @property(Node) joystick: Node = null!; // 虚拟摇杆节点
+    @property(Camera) mainCamera: Camera = null!; // 主相机节点
+    @property({ type: CCBoolean, displayName: "相机朝向", visible: function (this: Player) { return !!this.mainCamera; } }) isCameraOrientation: boolean = true;
     @property({ type: Node, tooltip: "物品挂载点" }) point1: Node = null;
     @property({ type: Node, tooltip: "物品挂载点" }) point2: Node = null;
 
     private rigidBody: RigidBody = null;
-    private hpbar: Sprite = null;
-    private uio: UIOpacity = null;
-    private currentHp: number = PlayerInfo.HP;
     private startGame: boolean = false;
-
     private playerAni: SkeletalAnimation = null;
+
+    max: number = 50;
+    meatList: Node[] = [];
+    wheatList: Node[] = [];
 
     protected onLoad(): void {
         Player.ins = this;
 
         this.rigidBody = this.getComponent(RigidBody);
-        this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
-        this.uio = this.hp.getComponent(UIOpacity);
         this.playerAni = this.getComponent(SkeletalAnimation);
-
-
-        this.uio.opacity = 0;
         IEvent.on(EVENT_TYPE.GAME_START, () => {
             this.startGame = true;
         });
@@ -121,24 +92,6 @@ export class Player extends Component {
             // 执行攻击
             closestZombie.beHurt(PlayerInfo.Attack);
         }
-    }
-
-    private hpTween: Tween<Node> = null;
-    beHurt(num: number) {
-        this.currentHp -= num;
-        this.hpbar.fillRange = this.currentHp / PlayerInfo.HP;
-        this.uio.opacity = 255;
-
-
-        if (this.hpTween) {
-            this.hpTween.stop();
-        }
-        this.hpTween = tween(this.hp)
-            .delay(3)
-            .call(() => {
-                this.uio.opacity = 0;
-            })
-            .start();
     }
 
     update(deltaTime: number) {
@@ -214,10 +167,6 @@ export class Player extends Component {
             this.rigidBody.setLinearVelocity(Vec3.ZERO);
             this.playAni("Idle");
         }
-    }
-
-    protected lateUpdate(dt: number): void {
-        this.hp.setWorldRotation(GameMager.ins.camera.node.worldRotation);
     }
 
     // 角度插值函数（处理360度环绕）

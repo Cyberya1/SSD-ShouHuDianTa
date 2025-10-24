@@ -4,7 +4,7 @@ import { Vec3 } from 'cc';
 import { Zombie } from '../zombie/Zombie';
 import { GameMager } from '../GameMager';
 import { Label } from 'cc';
-import { TowerInfo } from '../config/GameData';
+import { GameInfo, TowerInfo } from '../config/GameData';
 import { v3 } from 'cc';
 import { tween } from 'cc';
 import { Prefab } from 'cc';
@@ -29,19 +29,18 @@ export class Tower extends Component {
 
 
     private gold: number = 0;
-    private level: number = 1;
     private level_1_need_gold: number = 50;
     private level_2_need_gold: number = 500;
-    private currentHP: number = 0;
+    private currentHP: number = TowerInfo.HP;
     private uio: UIOpacity = null;
     private hpbar: Sprite = null;
 
+    level: number = 1;
     data: any = null;
 
     protected onLoad(): void {
         Tower.ins = this;
         this.data = TowerInfo.Level1;
-        this.currentHP = this.data.HP;
         this.uio = this.hp.getComponent(UIOpacity);
         this.hpbar = this.hp.getChildByName("Bar").getComponent(Sprite);
     }
@@ -84,7 +83,7 @@ export class Tower extends Component {
 
     beHurt(num: number) {
         this.currentHP -= num;
-        this.hpbar.fillRange = this.currentHP / this.data.HP;
+        this.hpbar.fillRange = this.currentHP / TowerInfo.HP;
 
         if (this.currentHP <= 0) {
             IEvent.emit(EVENT_TYPE.GAME_OVER);
@@ -111,8 +110,9 @@ export class Tower extends Component {
 
         if (this.level == 2) {
             this.data = TowerInfo.Level2;
-            this.level1AttackRangeTip.active = false;
-            this.level2AttackRangeTip.active = true;
+            GameInfo.C = 3;
+            // this.level1AttackRangeTip.active = false;
+            // this.level2AttackRangeTip.active = true;
             ZombieMager.ins.loadSecondZombies();
         }
         tween(this.node)
