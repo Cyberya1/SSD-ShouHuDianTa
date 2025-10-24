@@ -161600,7 +161600,7 @@
     "node": {
       "__id__": 12082
     },
-    "_enabled": true,
+    "_enabled": false,
     "__prefab": null,
     "lineMesh": {
       "__id__": 12084
@@ -162025,7 +162025,7 @@
     "node": {
       "__id__": 79
     },
-    "_enabled": true,
+    "_enabled": false,
     "__prefab": null,
     "line": {
       "__id__": 12086
