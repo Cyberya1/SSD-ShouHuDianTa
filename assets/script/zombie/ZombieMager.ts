@@ -54,19 +54,29 @@ export class ZombieMager extends Component {
         this.scheduleOnce(() => {
             UIMager.instance.moreZombiesComingTip.active = false;
         }, 3)
-        for (let i = 0; i < ZombieInfo.Second / 2; i++) {
+
+        for (let i = 0; i < 30; i++) {
             this.scheduleOnce(() => {
                 this.loadZombie();
             }, 0.2 * i);
         }
 
         this.scheduleOnce(() => {
-            for (let i = 0; i < ZombieInfo.Second / 2; i++) {
+            for (let i = 0; i < 30; i++) {
                 this.scheduleOnce(() => {
                     this.loadZombie();
                 }, 0.2 * i);
             }
-        }, 10)
+        }, 10);
+
+
+        this.scheduleOnce(() => {
+            for (let i = 0; i < 30; i++) {
+                this.scheduleOnce(() => {
+                    this.loadZombie();
+                }, 0.2 * i);
+            }
+        }, 20);
     }
 
     zombieDied(die_node: Node, type: ZombieType) {

@@ -4,7 +4,7 @@ import { Vec3 } from 'cc';
 import { Zombie } from '../zombie/Zombie';
 import { GameMager } from '../GameMager';
 import { Label } from 'cc';
-import { TowerInfo } from '../config/GameData';
+import { GameInfo, TowerInfo } from '../config/GameData';
 import { v3 } from 'cc';
 import { tween } from 'cc';
 import { Prefab } from 'cc';
@@ -110,6 +110,7 @@ export class Tower extends Component {
 
         if (this.level == 2) {
             this.data = TowerInfo.Level2;
+            GameInfo.C = 3;
             // this.level1AttackRangeTip.active = false;
             // this.level2AttackRangeTip.active = true;
             ZombieMager.ins.loadSecondZombies();
