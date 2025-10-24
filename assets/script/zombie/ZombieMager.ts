@@ -37,7 +37,7 @@ export class ZombieMager extends Component {
         if (this.isSecondZombiesLoaded) return;
         this.scheduleOnce(() => {
             this.loadSecondZombies();
-        }, 30)
+        }, 100)
     }
 
     loadFirstZombies() {
