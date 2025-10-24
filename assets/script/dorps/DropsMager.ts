@@ -48,7 +48,7 @@ export class DropsMager extends Component {
             const offsetZ = Math.sin(randomAngle) * randomRadius;
             const endPos = new Vec3(
                 startPos.x + offsetX,
-                0.5,
+                startPos.y,
                 startPos.z + offsetZ
             );
 

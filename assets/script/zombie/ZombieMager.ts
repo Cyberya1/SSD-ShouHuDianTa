@@ -3,7 +3,6 @@ import { WallMager } from '../wall/WallMager';
 import { Zombie } from './Zombie';
 import { EVENT_TYPE, IEvent } from '../tools/CustomEvent';
 import { ZombieInfo } from '../config/GameData';
-import { UIMager } from '../UIMager';
 const { ccclass, property } = _decorator;
 
 export enum ZombieType {
@@ -32,14 +31,6 @@ export class ZombieMager extends Component {
         }));
     }
 
-    private isSecondZombiesLoaded: boolean = false;
-    protected start(): void {
-        if (this.isSecondZombiesLoaded) return;
-        this.scheduleOnce(() => {
-            this.loadSecondZombies();
-        }, 30)
-    }
-
     loadFirstZombies() {
         for (let i = 0; i < ZombieInfo.First; i++) {
             this.scheduleOnce(() => {
@@ -48,52 +39,23 @@ export class ZombieMager extends Component {
         }
     }
 
+    // 第二波批次
+    private pc: number = 2;
     loadSecondZombies() {
-        this.isSecondZombiesLoaded = true;
-        UIMager.instance.moreZombiesComingTip.active = true;
-        this.scheduleOnce(() => {
-            UIMager.instance.moreZombiesComingTip.active = false;
-        }, 3)
 
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < ZombieInfo.Second / 2; i++) {
             this.scheduleOnce(() => {
                 this.loadZombie();
             }, 0.2 * i);
         }
 
         this.scheduleOnce(() => {
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < ZombieInfo.Second / 2; i++) {
                 this.scheduleOnce(() => {
                     this.loadZombie();
                 }, 0.2 * i);
             }
-        }, 10);
-
-
-        this.scheduleOnce(() => {
-            for (let i = 0; i < 25; i++) {
-                this.scheduleOnce(() => {
-                    this.loadZombie();
-                }, 0.2 * i);
-            }
-        }, 20);
-
-        this.scheduleOnce(() => {
-            for (let i = 0; i < 30; i++) {
-                this.scheduleOnce(() => {
-                    this.loadZombie();
-                }, 0.2 * i);
-            }
-        }, 30);
-
-         this.scheduleOnce(() => {
-            for (let i = 0; i < 40; i++) {
-                this.scheduleOnce(() => {
-                    this.loadZombie();
-                }, 0.2 * i);
-            }
-        }, 50);
-
+        }, 10)
     }
 
     zombieDied(die_node: Node, type: ZombieType) {

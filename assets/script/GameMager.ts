@@ -24,8 +24,8 @@ export class GameMager extends Component {
     @property(Label) startTip: Label = null;
     @property(Node) handTip: Node = null;
 
-    // @property(NavLine) line: NavLine = null;
-    // @property(Node) test: Node = null;
+    @property(NavLine) line: NavLine = null;
+    @property(Node) test: Node = null;
 
 
     private camera_pos: Vec3 = v3(-0.34456, 39.083, 28.920985);
@@ -74,10 +74,10 @@ export class GameMager extends Component {
         }
     }
 
-    // protected lateUpdate(dt: number): void {
-    //     this.line.node.setWorldPosition(Player.ins.node.worldPosition);
-    //     this.line.init(this.test.getWorldPosition().clone());
-    // }
+    protected lateUpdate(dt: number): void {
+        this.line.node.setWorldPosition(Player.ins.node.worldPosition);
+        this.line.init(this.test.getWorldPosition().clone());
+    }
 
     GameEnd: boolean = false;
 

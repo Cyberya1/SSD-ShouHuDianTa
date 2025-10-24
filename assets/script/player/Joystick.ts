@@ -11,7 +11,7 @@ export class Joystick extends Component {
     @property(Node) point: Node = null;
     @property(Node) touchPanel: Node = null;
 
-    // @property(SkeletalAnimation) gcjAni: SkeletalAnimation = null;
+    @property(SkeletalAnimation) gcjAni: SkeletalAnimation = null;
 
     // 摇杆最大半径
     MaxRadius: number = 0;
@@ -53,7 +53,7 @@ export class Joystick extends Component {
         GameMager.ins.handTip.active = false;
         GameMager.ins.handTipTimer = 0;
 
-        // this.gcjAni.play("Work");
+        this.gcjAni.play("Work");
     }
 
     private onTouchMove(event: EventTouch) {
@@ -86,7 +86,7 @@ export class Joystick extends Component {
 
         this._direction = new Vec2();
 
-        // this.gcjAni.pause();
+        this.gcjAni.pause();
     }
 
     // /** 求角度 */

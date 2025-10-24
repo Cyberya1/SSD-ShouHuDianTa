@@ -169,7 +169,7 @@
       "__uuid__": "1ba7addd-14b0-443c-8a4b-7a8cfcbfaed9@134d8",
       "__expectedType__": "cc.Mesh"
     },
-    "_shadowCastingMode": 1,
+    "_shadowCastingMode": 0,
     "_shadowReceivingMode": 1,
     "_shadowBias": 0,
     "_shadowNormalBias": 0,
@@ -3432,6 +3432,9 @@
     },
     "joystick": null,
     "mainCamera": null,
+    "hp": {
+      "__id__": 102
+    },
     "isCameraOrientation": true,
     "point1": {
       "__id__": 93
@@ -3503,7 +3506,7 @@
       "z": 0.6
     },
     "_radius": 0.5,
-    "_cylinderHeight": 0.6,
+    "_cylinderHeight": 1,
     "_direction": 2,
     "_id": ""
   },
