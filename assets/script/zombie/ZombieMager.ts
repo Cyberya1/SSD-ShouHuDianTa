@@ -55,14 +55,14 @@ export class ZombieMager extends Component {
             UIMager.instance.moreZombiesComingTip.active = false;
         }, 3)
 
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 25; i++) {
             this.scheduleOnce(() => {
                 this.loadZombie();
             }, 0.2 * i);
         }
 
         this.scheduleOnce(() => {
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 25; i++) {
                 this.scheduleOnce(() => {
                     this.loadZombie();
                 }, 0.2 * i);
@@ -71,7 +71,7 @@ export class ZombieMager extends Component {
 
 
         this.scheduleOnce(() => {
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 50; i++) {
                 this.scheduleOnce(() => {
                     this.loadZombie();
                 }, 0.2 * i);
