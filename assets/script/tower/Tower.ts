@@ -29,13 +29,13 @@ export class Tower extends Component {
 
 
     private gold: number = 0;
-    private level: number = 1;
     private level_1_need_gold: number = 50;
     private level_2_need_gold: number = 500;
     private currentHP: number = TowerInfo.HP;
     private uio: UIOpacity = null;
     private hpbar: Sprite = null;
 
+    level: number = 1;
     data: any = null;
 
     protected onLoad(): void {
